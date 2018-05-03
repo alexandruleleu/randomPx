@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <title>Random px</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="navbar">
+            <a class="navbar-logo">
+                <div class="logo-photo">
+                    <img src="/src/img/camera.svg" alt="logoPhoto">
+                </div>
+                Random 
+                <span class="bold">px</span>
+            </a>
+
+            <div class="navbar-links">
+                <div class="user-profile">
+                    <div id="circle"></div>
+                    <p id="username">Leleu Roxana-Elena</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="photos-canvas">
+                <div id="myLoader" class="loader"></div>
+                <section id="slideshow">
+                    <div class="stage">
+                        <div id="my-photos" class="carrousel__content">
+                            <figure class="shadow"><img src="https://source.unsplash.com/WLUHO9A_xik/1280x720"/></figure>
+                            <figure class="shadow"><img src="https://source.unsplash.com/B3xZzHI88Ik/1280x720"></figure>
+                            <figure class="shadow"><img src="https://source.unsplash.com/hQNY2WP-qY4/1280x720"/></figure>
+                            <figure class="shadow"><img src="https://source.unsplash.com/JRV04uSiMr4/1280x720"/></figure>
+                            <figure class="shadow"><img src="https://source.unsplash.com/oQqX9HBUdO4/1280x720"/></figure>
+                            <figure class="shadow"><img src="https://source.unsplash.com/bsdoTTT7ebo/1280x720"/></figure>
+                            <figure class="shadow"><img src="https://source.unsplash.com/Pe5BC-EDtB4/1280x720"/></figure>
+                            <figure class="shadow"><img src="https://source.unsplash.com/9guR2Vmh1C4/1280x720"/></figure>
+                            <figure class="shadow"><img src="https://source.unsplash.com/hY5OUxg_Zgc/1280x720"/></figure>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="sidebar">
+                <div class="fields">
+                    <div class="location">    
+                        <div class="group">      
+                            <input id="searchInput" onkeydown="searchPhotosByTags(event)" placeholder="" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Tags</label>
+                        </div>
+                        
+                    </div>
+
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()" >&times;</span>
+                            <div class="modal-title" id="modal-img-name"></div>
+                            <div class="info">
+                                <div id="modal-img"></div>
+                                <div class="modal-info" id="modal-info">
+                                    <div class="line"><div class="label">Date: </div><span id="date"></span></div>
+                                    <div class="line"><div class="label">Camera: </div><span id="camera"></span></div>
+                                    <div class="line"><div class="label">Iso: </div> <span id="iso"></span></div>
+                                    <div class="line"><div class="label">Description: </div><span id="description"></span></div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>  
+            </div> 
+        </div>
+    </div>  
+</body>
+</html>
